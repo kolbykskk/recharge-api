@@ -140,7 +140,13 @@ class2 "Recharge", JSON.parse(<<-END) do
           "purchase_item_type": "subscription",
           "quantity": 1,
           "tax_due": "10.00",
-          "tax_lines": [],
+          "tax_lines": [
+            {
+              "price": "0.950",
+              "rate": 0.0725,
+              "title": "CA State Tax"
+            }
+          ],
           "taxable": true,
           "taxable_amount": "12",
           "sku": "MILK-1",
