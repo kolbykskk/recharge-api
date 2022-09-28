@@ -7,116 +7,166 @@ require "recharge/http_request"
 class2 "Recharge", JSON.parse(<<-END) do
 {
   "subscription":
-     {
-        "id":10101,
-        "address_id":178918,
-        "analytics_data": {},
-        "customer_id":1438,
-        "cancellation_reason": "$$$$",
-        "cancellation_reason_comments": "",
-        "cancelled_at":"2017-02-28T20:31:29",
-        "charge_interval_frequency": "3",
-        "created_at":"2017-02-28T20:31:29",
-        "updated_at":"2017-02-28 20:31:29",
-        "next_charge_scheduled_at":"2017-04-01T00:00:00",
-        "cancelled_at":null,
-        "has_queued_charges": 1,
-        "is_skippable": true,
-        "is_swappable": true,
-        "is_prepaid": false,
-        "max_retries_reached": 0,
-        "product_title":"Sumatra Coffee",
-        "price":12.0,
-        "quantity":1,
-        "recharge_product_id": 518676,
-        "status":"ACTIVE",
-        "shopify_product_id":1255183683,
-        "shopify_variant_id":3844924611,
-        "sku_override": false,
-        "sku":null,
-        "order_interval_unit":"day",
-        "order_interval_frequency":"30",
-        "charge_interval_frequency":"30",
-        "order_day_of_month":null,
-        "order_day_of_week":null,
-        "properties": [],
-        "variant_title": "Milk - a / b"
-     },
+    {
+      "id": 89559201,
+      "address_id": 48563471,
+      "customer_id": 43845860,
+      "analytics_data": {
+        "utm_params": []
+      },
+      "cancellation_reason": null,
+      "cancellation_reason_comments": null,
+      "cancelled_at": null,
+      "charge_interval_frequency": "30",
+      "created_at": "2021-02-25T21:27:19+00:00",
+      "expire_after_specific_number_of_charges": null,
+      "external_product_id": {
+        "ecommerce": "2103271587891"
+      },
+      "external_variant_id": {
+        "ecommerce": "18261278883891"
+      },
+      "has_queued_charges": true,
+      "is_prepaid": true,
+      "is_skippable": false,
+      "is_swappable": false,
+      "max_retries_reached": false,
+      "next_charge_scheduled_at": "2020-07-15",
+      "order_day_of_month": null,
+      "order_day_of_week": null,
+      "order_interval_frequency": "15",
+      "order_interval_unit": "day",
+      "price": 5,
+      "product_title": "Powder Milk 50.00% Off Auto renew",
+      "properties": [
+        {
+          "name": "Colour",
+          "value": "White"
+        },
+        {
+          "name": "Package Material",
+          "value": "Paper"
+        }
+      ],
+      "quantity": 3,
+      "sku": null,
+      "sku_override": false,
+      "status": "active",
+      "updated_at": "2020-07-10T10:30:51",
+      "variant_title": "1 / Powder"
+    },
   "charge":
     {
-      "address_id":178918,
-      "analytics_data": {},
-      "billing_address":{
-         "address1":"3030 Nebraska Avenue",
-         "address2":"",
-         "city":"Los Angeles",
-         "company":"",
-         "country":"United States",
-         "first_name":"Mike",
-         "last_name":"Flynn",
-         "phone":"",
-         "province":"California",
-         "zip":"90404"
+      "id": 100714428,
+      "address_id": 21317826,
+      "analytics_data": {
+        "utm_params": [
+          {
+            "utm_campaign": "spring_sale",
+            "utm_content": "differentiate-content",
+            "utm_data_source": "cookie",
+            "utm_medium": "email",
+            "utm_source": "newsletter",
+            "utm_term": "test-term",
+            "utm_time_stamp": "2019-12-16T23:57:28.752Z"
+          }
+        ]
+      },
+      "billing_address": {
+        "address1": "3030 Nebraska Avenue",
+        "address2": null,
+        "city": "Los Angeles",
+        "company": null,
+        "country_code": "US",
+        "first_name": "Mike",
+        "last_name": "Flynn",
+        "phone": "3103843698",
+        "province": "California",
+        "zip": "90404"
       },
       "client_details": {
-        "browser_ip": null,
-        "user_agent": null
+        "browser_ip": "192.168.0.1",
+        "user_agent": "safari webkit"
       },
-      "created_at":"2017-03-01T19:52:11",
-      "customer_hash":null,
-      "customer_id":10101,
-      "first_name":"Mike",
-      "has_uncommited_changes": false,
-      "id":1843,
-      "last_name":"Flynn",
-      "line_items":[
-         {
-            "grams":0,
-            "images": {},
-            "price":100.0,
-            "properties":[],
-            "quantity":1,
-            "shopify_product_id": "1255183683",
-            "shopify_variant_id":"3844924611",
-            "sku":"",
-            "title": "Milk  10% Off Auto renew",
-            "variant_title": "a / b",
-            "vendor": "Example Storeeeeeee",
-            "subscription_id":14562
-         }
+      "created_at": "2018-11-14T09:45:44",
+      "currency": "USD",
+      "customer_id": {
+        "id": 12345,
+        "email": "test@test.com",
+        "external_customer_id": {
+          "ecommerce": "2879413682227"
+        },
+        "hash": "7e706455cbd13e40"
+      },
+      "discounts": [
+        {
+          "id": 12345,
+          "code": "10DOLLAROFF",
+          "value": 10,
+          "value_type": "fixed_amount"
+        }
       ],
-      "note": "blah blah",
-      "note_attributes": [],
-      "processor_name": "foo",
-      "processed_at":"2014-11-20T00:00:00",
-      "scheduled_at":"2014-11-20T00:00:01",
-      "shipments_count":null,
-      "shipping_address":{
-         "address1":"3030 Nebraska Avenue",
-         "address2":"",
-         "city":"Los Angeles",
-         "company":"",
-         "country":"United States",
-         "first_name":"Mike",
-         "last_name":"Flynn",
-         "phone":"3103843698",
-         "province":"California",
-         "zip":"90404"
+      "error": null,
+      "error_type": null,
+      "external_order_id": {
+        "ecommerce": "2541635698739"
       },
-      "shipping_lines": [],
-      "shopify_order_id":"281223307",
-      "status":"SUCCESS",
-      "total_price":446.00,
-      "updated_at":"2016-09-05T09:19:29",
-      "tax_lines": 0,
-      "total_discounts": "0.0",
+      "external_transaction_id": {
+        "payment_processor": "ch_XXXXXXXXXXXXXXX"
+      },
+      "has_uncommitted_changes": false,
+      "line_items": [],
+      "note": "next order #1",
+      "order_attributes": [
+        {
+          "name": "custom name",
+          "value": "custom value"
+        }
+      ],
+      "processor_name": "stripe",
+      "scheduled_at": "2018-12-12T00:00:00",
+      "shipping_address": {
+        "address1": "3030 Nebraska Avenue",
+        "address2": "",
+        "city": "Los Angeles",
+        "company": "Recharge",
+        "country": "United States",
+        "first_name": "Mike",
+        "last_name": "Flynn",
+        "phone": "3103843698",
+        "province": "California",
+        "zip": "90404"
+      },
+      "shipping_lines": [
+        {
+          "code": "Standard Shipping",
+          "price": "0.00",
+          "title": "Standard Shipping"
+        }
+      ],
+      "status": "queued",
+      "subtotal_price": "12.00",
+      "tags": "Subscription",
+      "tax_lines": [
+        {
+          "price": "0.950",
+          "rate": 0.0725,
+          "title": "CA State Tax"
+        },
+        {
+          "price": "0.335",
+          "rate": 0.0225,
+          "title": "Los Angeles  County Tax"
+        }
+      ],
+      "total_discounts": "0.00",
       "total_line_items_price": "12.00",
       "total_price": "12.00",
       "total_refunds": null,
-      "total_tax": 0,
-      "total_weight": 4536,
-      "transaction_id": "cch_1Du2QpJ2iqHvZRd18RyqoPvc",
-      "type": "RECURRING"
+      "total_tax": "0.00",
+      "total_weight_grams": 4536,
+      "type": "recurring",
+      "updated_at": "2018-11-14T09:45:44"
     },
   "customer":
      {
