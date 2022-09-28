@@ -115,7 +115,39 @@ class2 "Recharge", JSON.parse(<<-END) do
         "payment_processor": "ch_XXXXXXXXXXXXXXX"
       },
       "has_uncommitted_changes": false,
-      "line_items": [],
+      "line_items": [
+        {
+          "purchase_item_id": 63898947,
+          "external_product_id": {
+            "ecommerce": "4381728735283"
+          },
+          "external_variant_id": {
+            "ecommerce": "99999999999"
+          },
+          "grams": 4536,
+          "images": {
+            "large": "https://cdn.shopify.com/s/files/1/0175/0695/9460/products/Sumatra_Coffee_large.png",
+            "medium": "https://cdn.shopify.com/s/files/1/0175/0695/9460/products/Sumatra_Coffee__medium.png",
+            "original": "https://cdn.shopify.com/s/files/1/0175/0695/9460/products/Sumatra_Coffee_.png",
+            "small": "https://cdn.shopify.com/s/files/1/0175/0695/9460/products/Sumatra_Coffee__small.png"
+          },
+          "properties": [
+            {
+              "name": "grind",
+              "value": "drip"
+            }
+          ],
+          "purchase_item_type": "subscription",
+          "quantity": 1,
+          "tax_due": "10.00",
+          "tax_lines": [],
+          "taxable": true,
+          "taxable_amount": "12",
+          "sku": "MILK-1",
+          "title": "Sumatra Coffee",
+          "variant_title": "Milk - a / b"
+        }
+      ],
       "note": "next order #1",
       "order_attributes": [
         {
