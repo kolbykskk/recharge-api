@@ -59,144 +59,29 @@ class2 "Recharge", JSON.parse(<<-END) do
     {
       "id": 100714428,
       "address_id": 21317826,
-      "analytics_data": {
-        "utm_params": [
-          {
-            "utm_campaign": "spring_sale",
-            "utm_content": "differentiate-content",
-            "utm_data_source": "cookie",
-            "utm_medium": "email",
-            "utm_source": "newsletter",
-            "utm_term": "test-term",
-            "utm_time_stamp": "2019-12-16T23:57:28.752Z"
-          }
-        ]
-      },
-      "billing_address": {
-        "address1": "3030 Nebraska Avenue",
-        "address2": null,
-        "city": "Los Angeles",
-        "company": null,
-        "country_code": "US",
-        "first_name": "Mike",
-        "last_name": "Flynn",
-        "phone": "3103843698",
-        "province": "California",
-        "zip": "90404"
-      },
-      "client_details": {
-        "browser_ip": "192.168.0.1",
-        "user_agent": "safari webkit"
-      },
+      "analytics_data": {},
+      "billing_address": {},
+      "client_details": {},
       "created_at": "2018-11-14T09:45:44",
       "currency": "USD",
-      "customer_id": {
-        "id": 12345,
-        "email": "test@test.com",
-        "external_customer_id": {
-          "ecommerce": "2879413682227"
-        },
-        "hash": "7e706455cbd13e40"
-      },
-      "discounts": [
-        {
-          "id": 12345,
-          "code": "10DOLLAROFF",
-          "value": 10,
-          "value_type": "fixed_amount"
-        }
-      ],
+      "customer_id": {},
+      "discounts": [],
       "error": null,
       "error_type": null,
-      "external_order_id": {
-        "ecommerce": "2541635698739"
-      },
-      "external_transaction_id": {
-        "payment_processor": "ch_XXXXXXXXXXXXXXX"
-      },
+      "external_order_id": {},
+      "external_transaction_id": {},
       "has_uncommitted_changes": false,
-      "line_items": [
-        {
-          "purchase_item_id": 63898947,
-          "external_product_id": {
-            "ecommerce": "4381728735283"
-          },
-          "external_variant_id": {
-            "ecommerce": "99999999999"
-          },
-          "grams": 4536,
-          "images": {
-            "large": "https://cdn.shopify.com/s/files/1/0175/0695/9460/products/Sumatra_Coffee_large.png",
-            "medium": "https://cdn.shopify.com/s/files/1/0175/0695/9460/products/Sumatra_Coffee__medium.png",
-            "original": "https://cdn.shopify.com/s/files/1/0175/0695/9460/products/Sumatra_Coffee_.png",
-            "small": "https://cdn.shopify.com/s/files/1/0175/0695/9460/products/Sumatra_Coffee__small.png"
-          },
-          "properties": [
-            {
-              "name": "grind",
-              "value": "drip"
-            }
-          ],
-          "purchase_item_type": "subscription",
-          "quantity": 1,
-          "tax_due": "10.00",
-          "tax_lines": [
-            {
-              "price": "0.950",
-              "rate": 0.0725,
-              "title": "CA State Tax"
-            }
-          ],
-          "taxable": true,
-          "taxable_amount": "12",
-          "sku": "MILK-1",
-          "title": "Sumatra Coffee",
-          "variant_title": "Milk - a / b"
-        }
-      ],
+      "line_items": [],
       "note": "next order #1",
-      "order_attributes": [
-        {
-          "name": "custom name",
-          "value": "custom value"
-        }
-      ],
+      "order_attributes": [],
       "processor_name": "stripe",
       "scheduled_at": "2018-12-12T00:00:00",
-      "shipping_address": {
-        "address1": "3030 Nebraska Avenue",
-        "address2": "",
-        "city": "Los Angeles",
-        "company": "Recharge",
-        "country": "United States",
-        "first_name": "Mike",
-        "last_name": "Flynn",
-        "phone": "3103843698",
-        "province": "California",
-        "zip": "90404"
-      },
-      "shipping_lines": [
-        {
-          "code": "Standard Shipping",
-          "price": "0.00",
-          "title": "Standard Shipping"
-        }
-      ],
+      "shipping_address": {},
+      "shipping_lines": [],
       "status": "queued",
       "subtotal_price": "12.00",
       "tags": "Subscription",
-      "tax_lines": [
-        {
-          "price": "0.950",
-          "rate": 0.0725,
-          "title": "CA State Tax"
-        },
-        {
-          "price": "0.335",
-          "rate": 0.0225,
-          "title": "Los Angeles  County Tax"
-        }
-      ],
+      "tax_lines": [],
       "total_discounts": "0.00",
       "total_line_items_price": "12.00",
       "total_price": "12.00",
