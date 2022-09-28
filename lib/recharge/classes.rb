@@ -36,7 +36,7 @@ class2 "Recharge", JSON.parse(<<-END) do
       "order_day_of_week": null,
       "order_interval_frequency": "15",
       "order_interval_unit": "day",
-      "price": 5,
+      "price": "5",
       "product_title": "Powder Milk 50.00% Off Auto renew",
       "properties": [
         {
