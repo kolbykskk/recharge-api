@@ -6,206 +6,204 @@ require "recharge/http_request"
 
 class2 "Recharge", JSON.parse(<<-END) do
 {
-  "subscription":
-    {
-      "id": 89559201,
-      "address_id": 48563471,
-      "customer_id": 43845860,
-      "analytics_data": {
-        "utm_params": []
-      },
-      "cancellation_reason": null,
-      "cancellation_reason_comments": null,
-      "cancelled_at": null,
-      "charge_interval_frequency": "30",
-      "created_at": "2021-02-25T21:27:19+00:00",
-      "expire_after_specific_number_of_charges": null,
-      "external_product_id": {
-        "ecommerce": "2103271587891"
-      },
-      "external_variant_id": {
-        "ecommerce": "18261278883891"
-      },
-      "has_queued_charges": true,
-      "is_prepaid": true,
-      "is_skippable": false,
-      "is_swappable": false,
-      "max_retries_reached": false,
-      "next_charge_scheduled_at": "2020-07-15",
-      "order_day_of_month": null,
-      "order_day_of_week": null,
-      "order_interval_frequency": "15",
-      "order_interval_unit": "day",
-      "price": "5",
-      "product_title": "Powder Milk 50.00% Off Auto renew",
-      "properties": [
-        {
-          "name": "Colour",
-          "value": "White"
-        },
-        {
-          "name": "Package Material",
-          "value": "Paper"
-        }
-      ],
-      "quantity": 3,
-      "sku": null,
-      "sku_override": false,
-      "status": "active",
-      "updated_at": "2020-07-10T10:30:51",
-      "variant_title": "1 / Powder"
+  "subscription": {
+    "id": 89559201,
+    "address_id": 48563471,
+    "customer_id": 43845860,
+    "analytics_data": {
+      "utm_params": []
     },
-  "charge":
-    {
-      "id": 100714428,
-      "address_id": 21317826,
-      "analytics_data": {
-        "utm_params": [
-          {
-            "utm_campaign": "spring_sale",
-            "utm_content": "differentiate-content",
-            "utm_data_source": "cookie",
-            "utm_medium": "email",
-            "utm_source": "newsletter",
-            "utm_term": "test-term",
-            "utm_time_stamp": "2019-12-16T23:57:28.752Z"
-          }
-        ]
+    "cancellation_reason": null,
+    "cancellation_reason_comments": null,
+    "cancelled_at": null,
+    "charge_interval_frequency": "30",
+    "created_at": "2021-02-25T21:27:19+00:00",
+    "expire_after_specific_number_of_charges": null,
+    "external_product_id": {
+      "ecommerce": "2103271587891"
+    },
+    "external_variant_id": {
+      "ecommerce": "18261278883891"
+    },
+    "has_queued_charges": true,
+    "is_prepaid": true,
+    "is_skippable": false,
+    "is_swappable": false,
+    "max_retries_reached": false,
+    "next_charge_scheduled_at": "2020-07-15",
+    "order_day_of_month": null,
+    "order_day_of_week": null,
+    "order_interval_frequency": "15",
+    "order_interval_unit": "day",
+    "price": "5",
+    "product_title": "Powder Milk 50.00% Off Auto renew",
+    "properties": [
+      {
+        "name": "Colour",
+        "value": "White"
       },
-      "billing_address": {
-        "address1": "3030 Nebraska Avenue",
-        "address2": null,
-        "city": "Los Angeles",
-        "company": null,
-        "country_code": "US",
-        "first_name": "Mike",
-        "last_name": "Flynn",
-        "phone": "3103843698",
-        "province": "California",
-        "zip": "90404"
+      {
+        "name": "Package Material",
+        "value": "Paper"
+      }
+    ],
+    "quantity": 3,
+    "sku": null,
+    "sku_override": false,
+    "status": "active",
+    "updated_at": "2020-07-10T10:30:51",
+    "variant_title": "1 / Powder"
+  },
+  "charge": {
+    "id": 100714428,
+    "address_id": 21317826,
+    "analytics_data": {
+      "utm_params": [
+        {
+          "utm_campaign": "spring_sale",
+          "utm_content": "differentiate-content",
+          "utm_data_source": "cookie",
+          "utm_medium": "email",
+          "utm_source": "newsletter",
+          "utm_term": "test-term",
+          "utm_time_stamp": "2019-12-16T23:57:28.752Z"
+        }
+      ]
+    },
+    "billing_address": {
+      "address1": "3030 Nebraska Avenue",
+      "address2": null,
+      "city": "Los Angeles",
+      "company": null,
+      "country_code": "US",
+      "first_name": "Mike",
+      "last_name": "Flynn",
+      "phone": "3103843698",
+      "province": "California",
+      "zip": "90404"
+    },
+    "client_details": {
+      "browser_ip": "192.168.0.1",
+      "user_agent": "safari webkit"
+    },
+    "created_at": "2018-11-14T09:45:44",
+    "currency": "USD",
+    "customer_id": {
+      "id": 12345,
+      "email": "test@test.com",
+      "external_customer_id": {
+        "ecommerce": "2879413682227"
       },
-      "client_details": {
-        "browser_ip": "192.168.0.1",
-        "user_agent": "safari webkit"
-      },
-      "created_at": "2018-11-14T09:45:44",
-      "currency": "USD",
-      "customer_id": {
+      "hash": "7e706455cbd13e40"
+    },
+    "discounts": [
+      {
         "id": 12345,
-        "email": "test@test.com",
-        "external_customer_id": {
-          "ecommerce": "2879413682227"
-        },
-        "hash": "7e706455cbd13e40"
-      },
-      "discounts": [
-        {
-          "id": 12345,
-          "code": "10DOLLAROFF",
-          "value": 10,
-          "value_type": "fixed_amount"
-        }
-      ],
-      "error": null,
-      "error_type": null,
-      "external_order_id": {
-        "ecommerce": "2541635698739"
-      },
-      "external_transaction_id": {
-        "payment_processor": "ch_XXXXXXXXXXXXXXX"
-      },
-      "has_uncommitted_changes": false,
-      "line_items": [
-        {
-          "purchase_item_id": 63898947,
-          "external_product_id": {
-            "ecommerce": "4381728735283"
-          },
-          "external_variant_id": {
-            "ecommerce": "99999999999"
-          },
-          "grams": 4536,
-          "images": {
-            "large": "https://cdn.shopify.com/s/files/1/0175/0695/9460/products/Sumatra_Coffee_large.png",
-            "medium": "https://cdn.shopify.com/s/files/1/0175/0695/9460/products/Sumatra_Coffee__medium.png",
-            "original": "https://cdn.shopify.com/s/files/1/0175/0695/9460/products/Sumatra_Coffee_.png",
-            "small": "https://cdn.shopify.com/s/files/1/0175/0695/9460/products/Sumatra_Coffee__small.png"
-          },
-          "properties": [
-            {
-              "name": "grind",
-              "value": "drip"
-            }
-          ],
-          "purchase_item_type": "subscription",
-          "quantity": 1,
-          "tax_due": "10.00",
-          "tax_lines": [
-            {
-              "price": "0.950",
-              "rate": 0.0725,
-              "title": "CA State Tax"
-            }
-          ],
-          "taxable": true,
-          "taxable_amount": "12",
-          "sku": "MILK-1",
-          "title": "Sumatra Coffee",
-          "variant_title": "Milk - a / b"
-        }
-      ],
-      "note": "next order #1",
-      "order_attributes": [
-        {
-          "name": "custom name",
-          "value": "custom value"
-        }
-      ],
-      "processor_name": "stripe",
-      "scheduled_at": "2018-12-12T00:00:00",
-      "shipping_address": {
-        "address1": "3030 Nebraska Avenue",
-        "address2": "",
-        "city": "Los Angeles",
-        "company": "Recharge",
-        "country": "United States",
-        "first_name": "Mike",
-        "last_name": "Flynn",
-        "phone": "3103843698",
-        "province": "California",
-        "zip": "90404"
-      },
-      "shipping_lines": [
-        {
-          "code": "Standard Shipping",
-          "price": "0.00",
-          "title": "Standard Shipping"
-        }
-      ],
-      "status": "queued",
-      "subtotal_price": "12.00",
-      "tags": "Subscription",
-      "tax_lines": [
-        {
-          "price": "0.950",
-          "rate": 0.0725,
-          "title": "CA State Tax"
-        },
-        {
-          "price": "0.335",
-          "rate": 0.0225,
-          "title": "Los Angeles  County Tax"
-        }
-      ],
-      "total_discounts": "0.00",
-      "total_line_items_price": "12.00",
-      "total_price": "12.00",
-      "total_refunds": null,
-      "total_tax": "0.00",
-      "total_weight_grams": 4536,
-      "type": "recurring",
-      "updated_at": "2018-11-14T09:45:44"
+        "code": "10DOLLAROFF",
+        "value": 10,
+        "value_type": "fixed_amount"
+      }
+    ],
+    "error": null,
+    "error_type": null,
+    "external_order_id": {
+      "ecommerce": "2541635698739"
     },
+    "external_transaction_id": {
+      "payment_processor": "ch_XXXXXXXXXXXXXXX"
+    },
+    "has_uncommitted_changes": false,
+    "line_items": [
+      {
+        "purchase_item_id": 63898947,
+        "external_product_id": {
+          "ecommerce": "4381728735283"
+        },
+        "external_variant_id": {
+          "ecommerce": "99999999999"
+        },
+        "grams": 4536,
+        "images": {
+          "large": "https://cdn.shopify.com/s/files/1/0175/0695/9460/products/Sumatra_Coffee_large.png",
+          "medium": "https://cdn.shopify.com/s/files/1/0175/0695/9460/products/Sumatra_Coffee__medium.png",
+          "original": "https://cdn.shopify.com/s/files/1/0175/0695/9460/products/Sumatra_Coffee_.png",
+          "small": "https://cdn.shopify.com/s/files/1/0175/0695/9460/products/Sumatra_Coffee__small.png"
+        },
+        "properties": [
+          {
+            "name": "grind",
+            "value": "drip"
+          }
+        ],
+        "purchase_item_type": "subscription",
+        "quantity": 1,
+        "tax_due": "10.00",
+        "tax_lines": [
+          {
+            "price": "0.950",
+            "rate": 0.0725,
+            "title": "CA State Tax"
+          }
+        ],
+        "taxable": true,
+        "taxable_amount": "12",
+        "sku": "MILK-1",
+        "title": "Sumatra Coffee",
+        "variant_title": "Milk - a / b"
+      }
+    ],
+    "note": "next order #1",
+    "order_attributes": [
+      {
+        "name": "custom name",
+        "value": "custom value"
+      }
+    ],
+    "processor_name": "stripe",
+    "scheduled_at": "2018-12-12T00:00:00",
+    "shipping_address": {
+      "address1": "3030 Nebraska Avenue",
+      "address2": "",
+      "city": "Los Angeles",
+      "company": "Recharge",
+      "country": "United States",
+      "first_name": "Mike",
+      "last_name": "Flynn",
+      "phone": "3103843698",
+      "province": "California",
+      "zip": "90404"
+    },
+    "shipping_lines": [
+      {
+        "code": "Standard Shipping",
+        "price": "0.00",
+        "title": "Standard Shipping"
+      }
+    ],
+    "status": "queued",
+    "subtotal_price": "12.00",
+    "tags": "Subscription",
+    "tax_lines": [
+      {
+        "price": "0.950",
+        "rate": 0.0725,
+        "title": "CA State Tax"
+      },
+      {
+        "price": "0.335",
+        "rate": 0.0225,
+        "title": "Los Angeles  County Tax"
+      }
+    ],
+    "total_discounts": "0.00",
+    "total_line_items_price": "12.00",
+    "total_price": "12.00",
+    "total_refunds": null,
+    "total_tax": "0.00",
+    "total_weight_grams": 4536,
+    "type": "recurring",
+    "updated_at": "2018-11-14T09:45:44"
+  },
   "customer":
      {
         "id": 1438,
@@ -334,18 +332,37 @@ class2 "Recharge", JSON.parse(<<-END) do
      "address":"https://request.in/foo",
      "topic":"order/create"
   },
-  "address":{
-    "id":3411137,
-    "address1":"1933 Manning",
-    "address2":"204",
-    "city":"los angeles",
-    "province":"California",
-    "first_name":"mike",
-    "last_name":"flynn",
-    "zip":"90025",
-    "company":"bootstrap",
-    "phone":"3103103101",
-    "country":"United States"
+  "address": {
+    "id": 21317826,
+    "payment_method_id": 17874235,
+    "address1": "1776 Washington Street",
+    "address2": "",
+    "city": "Los Angeles",
+    "company": "Recharge",
+    "country_code": "US",
+    "created_at": "2018-11-14T09:00:01",
+    "customer_id": 18819267,
+    "discount_id": null,
+    "first_name": "John",
+    "last_name": "Doe",
+    "order_attributes": [
+      {
+        "name": "custom name",
+        "value": "custom value"
+      }
+    ],
+    "order_note": "My recurring order note.",
+    "phone": "5551234567",
+    "presentment_currency": null,
+    "shipping_lines_override": [
+      {
+        "code": "Standard Shipping",
+        "price": "0.00",
+        "title": "Standard Shipping"
+      }
+    ],
+    "updated_at": "2018-11-14T09:00:01",
+    "zip": "90404"
   },
   "discount":{
     "id": 3748296,
