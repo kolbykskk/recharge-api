@@ -605,7 +605,8 @@ module Recharge
     extend HTTPRequest::Count
     extend HTTPRequest::Get
     extend HTTPRequest::List
-
+    extend HTTPRequest::Update
+    
     def self.count(options = nil)
       super(convert_date_params(options, :created_at_max, :created_at_min, :date_min, :date_max))
     end
