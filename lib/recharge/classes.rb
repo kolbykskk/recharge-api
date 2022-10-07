@@ -646,7 +646,7 @@ module Recharge
 
     include Persistable
 
-    limit_method :list, rate: 1, interval: 1.5
+    # limit_method :list, rate: 1, interval: 1.5
 
     #
     # Activate a subscription
