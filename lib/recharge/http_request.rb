@@ -9,6 +9,9 @@ require "ruby-limiter"
 
 module Recharge
   module HTTPRequest # :nodoc:
+    extend Limiter::Mixin
+
+    limit_method :request, rate: 1, interval: 0.5
 
     protected
 
@@ -174,10 +177,6 @@ module Recharge
 
     module Get
       include HTTPRequest
-      extend Limiter::Mixin
-  
-      limit_method :get, rate: 1, interval: 1.5
-      puts 'aaaaa'
 
       def get(id)
         id_required!(id)
@@ -205,7 +204,7 @@ module Recharge
     #
     module List
       include HTTPRequest
-
+      
       def list(options = nil)
         data = GET(self::PATH, options)
         (data[self::COLLECTION] || []).map { |d| new(d.merge("meta" => data["meta"])) }
