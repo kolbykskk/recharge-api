@@ -3,6 +3,7 @@
 require "json"
 require "class2"
 require "recharge/http_request"
+require "ruby-limiter"
 
 class2 "Recharge", JSON.parse(<<-END) do
 {
