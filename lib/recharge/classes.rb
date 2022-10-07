@@ -641,8 +641,11 @@ module Recharge
     extend HTTPRequest::Get
     extend HTTPRequest::Update
     extend HTTPRequest::List
+    extend Limiter::Mixin
 
     include Persistable
+
+    limit_method :list, rate: 1, interval: 1.5
 
     #
     # Activate a subscription
