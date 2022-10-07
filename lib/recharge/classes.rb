@@ -3,7 +3,6 @@
 require "json"
 require "class2"
 require "recharge/http_request"
-require "ruby-limiter"
 
 class2 "Recharge", JSON.parse(<<-END) do
 {
@@ -642,11 +641,8 @@ module Recharge
     extend HTTPRequest::Get
     extend HTTPRequest::Update
     extend HTTPRequest::List
-    extend Limiter::Mixin
 
     include Persistable
-
-    limit_method :get, rate: 1, interval: 1.5
 
     #
     # Activate a subscription

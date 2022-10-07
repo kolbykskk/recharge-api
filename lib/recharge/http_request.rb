@@ -173,6 +173,10 @@ module Recharge
 
     module Get
       include HTTPRequest
+      extend Limiter::Mixin
+  
+      limit_method :get, rate: 1, interval: 1.5
+      puts 'aaaaa'
 
       def get(id)
         id_required!(id)
