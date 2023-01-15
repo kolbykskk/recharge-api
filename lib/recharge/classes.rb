@@ -123,12 +123,7 @@ class2 "Recharge", JSON.parse(<<-END) do
           "ecommerce": "99999999999"
         },
         "grams": 4536,
-        "images": {
-          "large": "https://cdn.shopify.com/s/files/1/0175/0695/9460/products/Sumatra_Coffee_large.png",
-          "medium": "https://cdn.shopify.com/s/files/1/0175/0695/9460/products/Sumatra_Coffee__medium.png",
-          "original": "https://cdn.shopify.com/s/files/1/0175/0695/9460/products/Sumatra_Coffee_.png",
-          "small": "https://cdn.shopify.com/s/files/1/0175/0695/9460/products/Sumatra_Coffee__small.png"
-        },
+        "images": {},
         "properties": [
           {
             "name": "grind",
