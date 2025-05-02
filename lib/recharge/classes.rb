@@ -145,9 +145,7 @@ class2 "Recharge", JSON.parse(<<-END) do
         "sku": "MILK-1",
         "title": "Sumatra Coffee",
         "variant_title": "Milk - a / b",
-        "total_price": "10.95",
-        "purchase_item_id": 63898947,
-        "purchase_item_type": "subscription"
+        "total_price": "10.95"
       }
     ],
     "note": "next order #1",
