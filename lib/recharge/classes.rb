@@ -124,6 +124,7 @@ class2 "Recharge", JSON.parse(<<-END) do
         },
         "grams": 4536,
         "images": {},
+        "original_price": "12.00",
         "properties": [
           {
             "name": "grind",
@@ -132,20 +133,26 @@ class2 "Recharge", JSON.parse(<<-END) do
         ],
         "purchase_item_type": "subscription",
         "quantity": 1,
-        "tax_due": "10.00",
+        "sku": "MILK-1",
+        "tax_due": "1.14",
         "tax_lines": [
           {
-            "price": "0.950",
+            "price": "0.870",
             "rate": 0.0725,
             "title": "CA State Tax"
+          },
+          {
+            "price": "0.270",
+            "rate": 0.0225,
+            "title": "Los Angeles County Tax"
           }
         ],
         "taxable": true,
-        "taxable_amount": "12",
-        "sku": "MILK-1",
+        "taxable_amount": "12.00",
         "title": "Sumatra Coffee",
-        "variant_title": "Milk - a / b",
-        "total_price": "10.95"
+        "total_price": "13.14",
+        "unit_price": "12.00",
+        "variant_title": "Milk - a / b"
       }
     ],
     "note": "next order #1",
@@ -249,15 +256,52 @@ class2 "Recharge", JSON.parse(<<-END) do
      "is_prepaid":false,
      "line_items":[
         {
-           "subscription_id":10101,
-           "shopify_product_id":"1255183683",
-           "shopify_variant_id":"3844924611",
-           "variant_title":"Sumatra",
-           "title":"Sumatra Latte",
-           "quantity":1,
-           "properties":[],
-           "purchase_item_type": "subscription",
-           "purchase_item_id": 63898947
+          "purchase_item_id": 365974856,
+          "external_inventory_policy": "decrement_obeying_policy",
+          "external_product_id": {
+            "ecommerce": "456123789"
+          },
+          "external_variant_id": {
+            "ecommerce": "4569876413"
+          },
+          "grams": 454,
+          "images": {},
+          "original_price": "10.00",
+          "properties": [
+            {
+              "name": "grind",
+              "value": "drip"
+            },
+            {
+              "name": "size",
+              "value": "medium"
+            }
+          ],
+          "purchase_item_type": "subscription",
+          "quantity": 4,
+          "sku": "TOM0001",
+          "tax_due": "3.80",
+          "tax_lines": [
+            {
+              "price": "0.993",
+              "rate": "0.0725",
+              "unit_price": "0.331",
+              "title": "CA State Tax"
+            },
+            {
+              "price": "0.308",
+              "rate": "0.0225",
+              "unit_price": "0.102",
+              "title": "LA County Tax"
+            }
+          ],
+          "taxable": true,
+          "taxable_amount": "10.00",
+          "title": "Shirt bundle",
+          "total_price": "43.80",
+          "unit_price": "10.00",
+          "unit_price_includes_tax": false,
+          "variant_title": "Blue t-shirts"
         }
      ],
      "total_price":18.00,
