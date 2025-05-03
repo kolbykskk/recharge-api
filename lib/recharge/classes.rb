@@ -255,7 +255,9 @@ class2 "Recharge", JSON.parse(<<-END) do
            "variant_title":"Sumatra",
            "title":"Sumatra Latte",
            "quantity":1,
-           "properties":[]
+           "properties":[],
+           "purchase_item_type": "subscription",
+           "purchase_item_id": 63898947
         }
      ],
      "total_price":18.00,
